@@ -16,10 +16,13 @@
 							<a class="lefttext" href="index.html">Main Page</a>
 						</div>
 						<div class="leftmenu">
-							<a class="lefttext">Contents</a>
+							<a class="lefttext" href="contents.html">Contents</a>
 						</div>
 						<div class="leftmenu">
 							<a class="lefttext">Random article</a>
+						</div>
+						<div class="leftmenu">
+							<a class="lefttext" href="add-article.html">Add an article</a>
 						</div>
 					</div>
 				</nav>
@@ -28,19 +31,8 @@
 				<div class="bannertop">
 					<div class="logo">
 					</div>
-					<nav>
 						<div style="margin-left:200px;">
-							<div class="topmenu">
-								<!--first-->
-							</div>
-							<div class="topmenu">
-								<!--second-->
-							</div>
-							<div class="topmenu">
-								<!--third-->
-							</div>
 						</div>
-					</nav>
 					<a href="#" id="login_button">
 						<b>
 						<span class="login">
@@ -52,8 +44,10 @@
 					<div id="login_cont">
 						<div id="login_window">
 							<form>
-								<a style="font-size: 12;">Username<br></a> <input type="text" name="username"><br>
-								<a style="font-size: 12;"><br>Password<br></a> <input type="password" name="password">
+								<a style="font-size: 12;">Username<br></a> <input class="textinput" type="text" name="username"><br>
+								<a style="font-size: 12;"><br>Password<br></a> <input class="textinput" type="password" name="password"><br>
+								<a style="font-size: 10;"><br>Remember me</a> <input type="checkbox" name="vehicle" value="Car"> <br>
+								<br><input type="submit" value="Login">	
 							</form>
 						</div>
 					</div>
@@ -63,9 +57,25 @@
 						<article>
 							<div class="article">
 								<div class="artc_banner">					
-									
+									<a><h1>Add article</h1></a>
 								</div>
 								<div class="artc_text">
+									<script type="text/javascript" src="http://www.html.am/html-editors/ckeditor/ckeditor.js"></script> 
+									<script src="http://www.html.am/html-editors/ckeditor/_samples/sample.js" type="text/javascript"></script> 
+									<link href="http://www.html.am/html-editors/ckeditor/_samples/sample.css" rel="stylesheet" type="text/css" /> 
+									<div id="alerts"> 
+									<noscript> 
+										<p> 
+											<strong>This online HTML editor requires JavaScript to run</strong>. Your browser either doesn't support JavaScript, or JavaScript is currently disabled (via preferences or options). Because of this, you will see the raw HTML code instead of the rich text / WYSIWYG editor.
+										</p> 
+										<p>To view the rich text / WYSIWYG editor, please enable JavaScript (or use a browser that supports JavaScript).</p>
+									</noscript> 
+									</div>
+									<div style="width:100%;">
+									<textarea class="ckeditor" cols="80" id="FullEditor2" name="FullEditor2" rows="10">
+									
+									</textarea>
+									</div>
 
 								</div>
 							</div>
